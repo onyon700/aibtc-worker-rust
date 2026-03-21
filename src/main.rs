@@ -186,7 +186,7 @@ fn main() {
     let address = args[1].clone();
 
     let cpu = num_cpus::get();
-    let workers = if cpu > 2 { cpu } else { 1 };
+    let workers = 2;
 
     println!("CPU: {}", cpu);
     println!("Workers: {}", workers);
